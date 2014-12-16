@@ -12,7 +12,13 @@ public class Igrac {
 		this.ocjeneIgraca = ocjeneIgraca;
 
 	}
-
+public Igrac(Igrac other){
+	this.ime = other.ime;
+	this.prezime=other.prezime;
+	this.brojDresa=other.brojDresa;
+	this.ocjeneIgraca=other.ocjeneIgraca;
+}
+	
 	public Igrac(String ime, String prezime, int brojDresa,
 			double ocjenaBrzina, double ocjenaDodavanje, double ocjenaSut,
 			double ocjenaSutGlavom) {
