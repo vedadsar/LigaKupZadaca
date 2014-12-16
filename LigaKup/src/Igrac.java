@@ -105,5 +105,16 @@ public Igrac(Igrac other){
 				+ ocjeneIgraca.toString() + "\n";
 		return igracToString;
 	}
-
+/**
+ * Equals metoda za igrace.
+ * @param other
+ * @return
+ */
+	public boolean equals(Igrac other){
+	if (this.ime.equals(other.ime) && this.prezime.equals(other.prezime) && this.brojDresa == other.brojDresa && this.ocjeneIgraca.equals(other.ocjeneIgraca))
+	    return true;
+	return false;
+	}
+	
+	
 }

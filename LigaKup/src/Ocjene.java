@@ -98,6 +98,15 @@ public class Ocjene {
 				+ "\n\tSut: " + sut + "\n\tSutGlavom: " + sutGlavom + "\n";
 		return ispisOcjena;
 	}
-
+	/**
+	 * Equals metoda.
+	 * @param other
+	 * @return
+	 */
+public boolean equals(Ocjene other){
+	if(this.brzina == other.brzina && this.dodavanje == other.dodavanje && this.sut==other.sut && this.sutGlavom==other.sutGlavom)
+		return true;
+	return false;
+}
 
 }
